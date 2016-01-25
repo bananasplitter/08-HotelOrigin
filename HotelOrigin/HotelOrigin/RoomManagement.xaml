@@ -1,0 +1,20 @@
+﻿<Window x:Class="HotelOrigin.RoomManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelOrigin"
+        mc:Ignorable="d"
+        Title="RoomManagement" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGridRoomManagement" Margin="10,30,10,41" SelectionChanged="dataGridRoomManagement_SelectionChanged" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="Manage Rooms Here" HorizontalAlignment="Left" Margin="80,4,0,0" VerticalAlignment="Top" Width="149"/>
+        <Button x:Name="buttonRemoveRoom" Content="Remove Room" Margin="0,0,10,16" Click="buttonRemoveRoom_Click" HorizontalAlignment="Right" Width="102" Grid.ColumnSpan="2" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="buttonAddRoom" Content="Add Room" Margin="10,0,0,16" Click="buttonAddRoom_Click" HorizontalAlignment="Left" Width="102" Height="20" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
